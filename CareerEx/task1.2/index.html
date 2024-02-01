@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1.2</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+        form label {
+            margin-bottom: 5px;
+        }
+        form input:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <strong>* denotes mandotory</strong>
+    <br><br><br>
+    <form action="">
+        <label for="fullName">Full name*:</label>
+        <input type="text" name="fullName" placeholder="Full Name" id="fullName">
+
+        <label for="email">Email address*:</label>
+        <input type="email" name="email" placeholder="Email_Address" id="email">
+        
+        <label for="tourPackage*:"></label>
+        <select name="package_type" id="tourPackage">
+            <option value="Goa" selected>Goa</option>
+            <option value="cairo&luxor">5 Days Cairo & Luxor</option>
+            <option value="cairoTour">5 Days Cairo Tour</option>
+        </select>
+
+        <label for="arrival_date">Arrival date*:</label>
+        <input type="date" name="arrivalDate" id="arrival_date" placeholder="MM/DD/Y">
+
+        <label for="number_of_persons">Number of persons</label>
+        <input type="number" name="numberOfPersons" id="number_of_persons" placeholder="UNKNOWN_TYPE">
+        
+        <p>What would you want to avail?*</p>
+        <div>
+            <label for="boarding">Boarding</label>
+            <input type="checkbox" id="boarding" name="availType">
+            <br />
+            <label for="fooding">Fooding</label>
+            <input type="checkbox" id="fooding" name="availType">
+            <br>
+            <label for="sight_seeing">Sight seeing</label>
+            <input type="checkbox" id="sight_seeing" name="availType">
+        </div>
+        <br />
+        <label for="discount_code">Discount Coupon code:</label>
+        <input type="text" id="discount_code" name="discountCoupon" placeholder="UNKNOWN_TYPE">
+        
+        <p>Terms and conditions*</p>
+        <div>
+            <input type="radio" name="termOfConditions" id="agree">
+            <label for="agree">I agree</label>
+
+            <input type="radio" name="termOfConditions" id="disagree">
+            <label for="agree">I disagree</label>
+        </div>
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+</html>

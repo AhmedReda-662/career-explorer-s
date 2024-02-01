@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1.1</title>
+    <style>
+
+        fieldset:not(:last-child) {
+            margin-bottom: 30px;
+            display:flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        fieldset:last-child{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fieldset Tag in HTML 5</h1>
+    <form action="">
+        <fieldset>
+            <legend>Employee Details</legend>
+            
+            <label for="emp_id">Employee id</label>
+            <input type="number" name="emp_id" id="emp_id">
+
+            <label for="emp_fname">Employee FirstName</label>
+            <input type="text" name="emp_fname" id="emp_fname">
+
+            <label for="emp_lname">Employee LastName</label>
+            <input type="text" name="emp_lname" id="emp_lname">
+
+            <label for="emp_address">Employee Address</label>
+            <input type="text" name="emp_address" id="emp_address">
+            
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Programming Skills</legend>
+
+            <label for="programming_language">Programming Language</label>
+            <input type="text" name="programming_language">
+            <br /><br />
+
+            <label for="programming-lang">C Language</label>
+            <input type="checkbox" name="programming-lang" id="programming-lang">
+            <br /><br />
+
+            <label for="programming-lang">Java Language</label>
+            <input type="checkbox" name="programming-lang" id="programming-lang">
+            <br /><br />
+
+            <label for="programming-lang">C# Language</label>
+            <input type="checkbox" name="programming-lang" id="programming-lang">
+            <br /><br />
+
+            <label for="programming-lang">Oracle Language</label>
+            <input type="checkbox" name="programming-lang" id="programming-lang">
+        </fieldset>
+    </form>
+</body>
+</html>
