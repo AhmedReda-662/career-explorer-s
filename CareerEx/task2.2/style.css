@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh
+}
+table {
+    width: 100%;
+    height: 100%;
+}
+table thead th {
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(197, 194, 194);
+    font-size: 40px;
+}
+table tbody .aside td {
+    vertical-align: baseline;
+    padding: 10px;
+}
+table tbody .aside td:first-child{
+    background-color: khaki;
+    width: 300px;
+    
+}
+
+table tbody .aside td:first-child a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+
+}
+table tbody .aside td:first-child a:not(:last-child) {
+    margin-bottom: 30px;
+}
+table tbody .aside td:last-child {
+    
+}
+table tfoot td {
+    text-align: center;
+    background-color: rgb(197, 194, 194);
+    padding: 10px;
+}
